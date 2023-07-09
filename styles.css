@@ -1,0 +1,430 @@
+@font-face{
+    font-family: 'Arlon';
+    src: url('./fonts/Arlon-bold.woff2') format('woff2'), url('./fonts/Arlon-bold.woff') format('woff');
+    font-style: bold;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/SourceSanspro-Regular.woff2') format('woff2'), url('./fonts/SourceSanspro-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+}
+
+/* Variables */
+
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #e6f9f4;
+    --cyan: #00FF;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --text-share: #728b8c;
+    --modal-color: #rgba(1, 0, 0, 0.78);
+    --modal-titles: #bc3d2e;
+    --start-button: #ed921f;
+    --modal-text: #161b1c;
+    --final-button: #bf0000;
+    --modal-second-color: #e6ce76;
+    --modal-column-image: #ffc042;
+    --button-share: #07584e;
+    --yellow: #f2d272;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+
+/* Desplique de menu */
+
+.inactive{
+    display: none;
+}
+
+/*-----------------*/
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+}
+
+nav{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--final-button);
+    box-shadow: 0px 0px 10px var(--black);
+
+}
+
+
+/* barra de navegacion derecha */
+.nav_right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button_nav{
+    display: flex;
+    padding: 0;
+    font-size: var(--md);
+    font-family: 'Arlon', sans-serif;
+    margin-right: 30px;
+}
+
+
+.button_nav button{
+    background-color: var(--white);
+    color: var(--black);
+    width: 100px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+}
+
+.button_nav figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+
+.nav_right input{
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 10px;
+    border: none;
+}
+
+.search_box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search_input {
+    padding-right: 30px; /* Asegúrate de dejar suficiente espacio para el icono */
+  }
+  
+  .search_icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--very-light-pink); /* Color del ícono */
+    pointer-events: none; /* Evita que el ícono sea clickeable */
+  }
+  
+
+/* barra de navegacion izquierda */
+
+.nav_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu_h {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.logo_principal{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* informacion de botones */
+
+.cartelera_info{
+    position: absolute;
+    background-color: var(--text-input-field);
+    width: 250px;
+    height: 200px;
+    top: 50px;
+    right: 520px;
+    margin: 30px;
+    border-radius: 8px;
+
+}
+.cartelera_info ul{
+    list-style: inside;
+    margin: 10px;
+    font-size: var(--sm);
+    font-family: 'Arlon', sans-serif;
+    padding-left: 0px;
+}
+
+.muy_pronto_info{
+    position: absolute;
+    background-color: var(--text-input-field);
+    width: 250px;
+    height: 200px;
+    top: 50px;
+    right: 390px;
+    margin: 30px;
+    border-radius: 8px;
+
+}
+
+.muy_pronto_info ul{
+    list-style: inside;
+    margin: 10px;
+    font-size: var(--sm);
+    font-family: 'Arlon', sans-serif;
+    padding-left: 0px;
+}
+
+.usuario{
+    position: absolute;
+    background-color: var(--text-input-field);
+    width: 250px;
+    height: auto;
+    top: 75px;
+    right: 0px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--dark);
+
+}
+
+.mi_cuenta{
+    background-color: var(--final-button);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+
+}
+
+.mi_cuenta h1{
+    font-family: 'Arlon', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario ul{
+    background-color: var(--text-input-field);
+    list-style: inside;
+    font-size: var(--sm);
+    font-family: 'Arlon', sans-serif;
+    padding-left: 0px;
+    border-radius: 8px;
+}
+
+
+.usuario .cerrar_sesion a{
+    color: var(--final-button);
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cerrar_sesion li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.titulo_seccion{
+    height: 40px;
+    font-family: 'Arlon', sans-serif;
+    font-size: 70px;
+    color: var(--black);
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.contenedor_peliculas{
+    background-color: var(--final-button);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.card{
+    background-color: var(--white);
+    width: auto;
+    height: auto;
+    margin: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*Aca hubo una cagada*/
+
+
+.cards_container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    
+  }
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    margin: 10px;
+    background-color: var(--final-button);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--dark);
+  }
+  .product-card img {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  .product-info{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .product-card .product-info figure {
+    margin: 0;
+  }
+  .product-card .product-info figure i{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .product-card .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .product-card .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--very-light-pink);
+  }
+
+  .product-info p:nth-child(1) {
+    
+    font-weight: bold;
+    color: var(--white);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .product-info p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+  .product-info p:nth-child(3) {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;;
+    margin-bottom: 36px;
+  }
+  .product-info p:nth-child(4) {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-bottom: 4px;
+    margin-bottom: 36px;
+  }
+.fa-heart{
+    color: var(--white);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+/*Aca termina el mierdero*/
+
+
+
+
+ul li a{
+    text-decoration: underline;
+    color: var(--dark);
+}
+ul li{
+    margin: 10px;
+    text-decoration: none;
+}
+
