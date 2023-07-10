@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/aee1a34f85.js" crossorigin="anonymous"></script>
-    <title>CineGo</title>
+    <title>Cartelera-CineGo</title>
 </head>
 <body>
     <header>
@@ -19,15 +19,32 @@
                 <div class="logo">
                      <img src="./icons/31274738_transparent.png" alt="" class="logo_principal">
                 </div>
+
+                <div class="ham inactive">
+                    <ul class="up">
+                        <li><a href="#">Boleteria</a></li>
+                        <li><a href="#">Calendario</a></li>
+                        <li><a href="#">Ubicacion</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Peliculas que me gustan</a></li>
+                    </ul>
+
+                    <ul class="down">
+                        <li><a href="#">Preguntas y Respuestas</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
                
             </div>
             <div class="nav_right">
 
                 <div class="button_nav">
-                        <button class="cartelera">Cartelera</button>
-                        <button class="muy_pronto">Muy Pronto</button>
-                        <button class="comidas">Comidas</button>
-                        <button class="ayuda">Ayuda</button>
+                        <button class="cartelera"><a href="">Cartelera</a></button>
+                        <button class="muy_pronto"><a href="">Muy Pronto</a></button>
+                        <button class="comidas"><a href="comidas.html">Comidas</a></button>
+                        <button class="ayuda"><a href="">Ayuda</a></button>
+
+
 
                     <div class="search_box">
                         <input type="text" placeholder="Buscar" class="search_input">
@@ -148,16 +165,35 @@
         </div>
     </div> -->
 
-    <div class="cards_container">
+        <div class="cards_container">
 
-    </div>
+        </div>
 
 
     </main>
 
     <footer>
+        <div class="footer_left">
+            <div class="footer_logo">
+                <img src="./icons/31274738_transparent.png" alt="">
+            </div>
+            <div class="footer_info">
+                <p>© 2023 CineGo</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+
+        <div class="footer_right">
+            <div class="footer_social">
+                <p>Siguenos en nuestras redes sociales</p>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+            </div>
+        </div>
 
     </footer>
-    <script src="main.js"></script>
+    <script src="cartelera.js"></script>
 </body>
 </html>

@@ -67,6 +67,9 @@ nav{
     justify-content: space-between;
     background-color: var(--final-button);
     box-shadow: 0px 0px 10px var(--black);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 
 }
 
@@ -99,6 +102,28 @@ nav{
     cursor: pointer;
     border: none;
     align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button_nav button a{
+    font-family: 'Arlon', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.muy_pronto:hover {
+    transform: scale(1.1);
+}
+.comidas:hover {
+    transform: scale(1.1);
+}
+.cartelera:hover {
+    transform: scale(1.1);
+}
+
+.ayuda:hover {
+    transform: scale(1.1);
 }
 
 .button_nav figure{
@@ -107,6 +132,10 @@ nav{
     align-items: center;
     flex-direction: row;
     margin: 10px;
+}
+
+.fa-user:hover {
+    transform: scale(1.1);
 }
 
 .fa-solid{
@@ -126,11 +155,11 @@ nav{
     display: inline-block;
   }
   
-  .search_input {
+.search_input {
     padding-right: 30px; /* Asegúrate de dejar suficiente espacio para el icono */
   }
   
-  .search_icon {
+.search_icon {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -155,7 +184,12 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 30px;
+    
 }
+
+.menu_h:hover {
+    transform: scale(1.1);
+    }
 
 .logo_principal{
     width: 200px;
@@ -266,6 +300,40 @@ nav{
     margin: 10px;
 }
 
+.ham{
+    position: absolute;
+    background-color: var(--text-input-field);
+    width: 250px;
+    height: auto;
+    top: 75px;
+    left: 0px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.ham ul{
+    background-color: var(--text-input-field);
+    list-style: inside;
+    font-size: var(--sm);
+    font-family: 'Arlon', sans-serif;
+    padding-left: 0px;
+    border-radius: 8px;
+}
+
+.up{
+    margin-bottom: 60px;
+}
+
+.down{
+    list-style: none;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.down li a{
+    text-decoration: none;
+    color: var(--final-button);
+}
+
 
 main{
     display: flex;
@@ -276,12 +344,16 @@ main{
 }
 
 .titulo_seccion{
+    width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: center;
     font-family: 'Arlon', sans-serif;
     font-size: 70px;
     color: var(--black);
     margin: 30px;
     margin-bottom: 50px;
+    margin-top: 80px;
 }
 
 .contenedor_peliculas{
@@ -326,6 +398,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     place-content: center;
+    z-index: 0;
     
   }
   .product-card {
@@ -334,7 +407,7 @@ main{
     align-items: center;
     height: 400px;
     width: 250px;
-    margin: 10px;
+    margin: 20px;
     background-color: var(--final-button);
     border-radius: 20px;
     box-shadow: 1px 1px 10px var(--dark);
@@ -345,7 +418,14 @@ main{
     border-radius: 20px;
     margin-top: 20px;
     object-fit: cover;
-  }
+    cursor: pointer;
+
+    }
+
+  .product-card:hover {
+    transform: scale(1.1);
+    }
+
   .product-info{
     width: 80%;
     height: 80%;
@@ -353,6 +433,7 @@ main{
     align-items: center;
     justify-content: center;
   }
+
   .product-card .product-info {
     display: flex;
     justify-content: space-between;
@@ -408,15 +489,17 @@ main{
     margin-bottom: 36px;
   }
 .fa-heart{
-    color: var(--white);
+    color: var(--black);
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
     cursor: pointer;
 }
+
+.like-active{
+    color: #ffffff;
+  }
 /*Aca termina el mierdero*/
-
-
 
 
 ul li a{
@@ -428,3 +511,55 @@ ul li{
     text-decoration: none;
 }
 
+/* footer */
+
+footer{
+    background-color: var(--final-button);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+.footer_left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.footer_left img{
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.footer_right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.footer_right a{
+    color: var(--white);
+    margin: 10px;
+}
+.footer_right p{
+    color: var(--white);
+    margin: 10px;
+}
+.footer_social{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
